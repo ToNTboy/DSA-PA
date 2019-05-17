@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 #include <cstdio>
 
 void merge(int* vector, int lo, int mi, int hi) {
@@ -42,7 +41,7 @@ int numsBetween(int* vector, int lo, int hi, int min, int max) {
 	return rl - ll;
 }
 
-int main_range_0(void) {
+int main() {
 	int n; int m;
 	int min, max;
 	std::scanf("%d %d", &n, &m);

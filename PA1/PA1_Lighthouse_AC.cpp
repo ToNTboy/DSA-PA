@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 #include<cstdio>
+
 #define MAXSIZE 4000000
 typedef long long ll;
 struct Point {
@@ -8,6 +8,7 @@ struct Point {
 Point *bs = new Point[MAXSIZE];
 ll *b = new ll[MAXSIZE];
 ll y[MAXSIZE], count = 0;
+
 void MergeStruct(Point *elem, int lo, int mi, int hi) {
 	Point *a = elem + lo, *c = elem + mi;
 	int lb = mi - lo, lc = hi - mi;
@@ -20,6 +21,7 @@ void MergeStruct(Point *elem, int lo, int mi, int hi) {
         }
     }
 }
+
 void MergeSort_X(Point *elem, int lo, int hi)
 {
 	if (hi - lo < 2)return;
@@ -28,6 +30,7 @@ void MergeSort_X(Point *elem, int lo, int hi)
 	MergeSort_X(elem, mi, hi);
 	MergeStruct(elem, lo, mi, hi);
 }
+
 void Mergell(ll *elem, int lo, int mi, int hi) {
 	ll *a = elem + lo, *c = elem + mi;
 	int lb = mi - lo, lc = hi - mi;
@@ -41,6 +44,7 @@ void Mergell(ll *elem, int lo, int mi, int hi) {
 		if (k < lc&&c[k] <= b[j]) a[i++] = c[k++];
 	}
 }
+
 void MergeSort_Y(ll *elem, int lo, int hi)
 {
 	if (hi - lo < 2)return;
@@ -49,8 +53,8 @@ void MergeSort_Y(ll *elem, int lo, int hi)
 	MergeSort_Y(elem, mi, hi);
 	Mergell(elem, lo, mi, hi);
 }
-int main
-() {
+
+int main() {
 	int n;
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++)

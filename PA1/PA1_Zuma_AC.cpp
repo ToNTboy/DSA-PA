@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 #include <cstdio>
 #include <cstring>
 
@@ -53,17 +52,13 @@ void eliminate(clist & v, int pos) {
 	}
 }
 
-int main_zuma_1(void) {
+int main() {
 	// accept input
 	clist beads = clist();
 	int oprs;
 	int *insPos;
 	char *insChar;
 
-	//scanf("%s", beads._elems);
-	//if ('A' <= beads._elems[0] && beads._elems[0] <= 'Z') {
-	//	beads._size += strlen(beads._elems);
-	//}
 	char tmp;
 	while (true) {
 		tmp = getchar();
