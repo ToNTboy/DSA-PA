@@ -1,6 +1,9 @@
 #include <cstdio>
 
 int main() {
+    setvbuf(stdin, new char[1 << 20], _IOFBF, 1 << 20);
+    setvbuf(stdout, new char[1 << 20], _IOFBF, 1 << 20);
+    
     // accept input
     int n, k;
     int *m;
