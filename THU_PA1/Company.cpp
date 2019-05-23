@@ -49,7 +49,7 @@ int main() {
             online--;
             break;
         case 'C':
-            /*memset(staff, 0xFF, sizeof(int) * n);  -->  O(n^2)*/
+            /* memset(staff, 0xFF, sizeof(int) * n);  -->  O(n*m) */
             for (int j = 0; j < rSize; j++) {
                 staff[onRecs[j]] = OFFLINE;
             }

@@ -27,6 +27,12 @@ programming assignments of class Datastruct and Dlgorithm in mooc
 
 ---
 #### THU PA 1
+
+- [x] Team
+- [x] Company
+- [ ] 
+- [ ] Alarm
+
 #### THU PA 2
 #### THU PA 3
 #### THU PA 4
