@@ -31,7 +31,7 @@ programming assignments of class Datastruct and Dlgorithm in mooc
 - [x] Team
 - [x] Company
 - [ ] Editor
-- [ ] Alarm
+- [x] Alarm
 
 #### THU PA 2
 #### THU PA 3
