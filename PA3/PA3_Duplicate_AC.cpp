@@ -114,10 +114,10 @@ int main(void)
             }
             else
             {
-                int unexist = probe(names, item, code, COUNT, UNIT_SIZE, &tmp);
+                int unexist = probe(names, str, code, COUNT, UNIT_SIZE, &tmp);
                 if (unexist)
                 {
-                    strcpy(item, str, UNIT_SIZE);
+                    strcpy(names+ tmp * UNIT_SIZE, str, UNIT_SIZE);
                 }
                 else
                 {
