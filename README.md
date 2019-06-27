@@ -17,7 +17,7 @@ programming assignments of class Datastruct and Dlgorithm in mooc
 
 - [x] Broadcast
 - [ ] Temperatrue
-- [ ] Deduplicate
+- [x] Deduplicate
 
 #### PA 4
 
